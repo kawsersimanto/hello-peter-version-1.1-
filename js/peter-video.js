@@ -7,7 +7,7 @@ let clickButton = document.querySelector(".home button");
 
 clickButton.addEventListener("click", displayVideo);
 function displayVideo(){
-    home.style.background = `url('../${videoSrc}')`;
+    home.style.background = `url('/../${videoSrc}')`;
     video.style.display = "block";
     clickButton.style.display = 'none';
     video.addEventListener('ended', hideVideo);
@@ -15,7 +15,7 @@ function displayVideo(){
 
 function hideVideo(){
     let style = home.style;
-    style.background = "url('/img/main/dr-octopus-1.jpg')";
+    style.background = "url('/../img/main/dr-octopus-1.jpg')";
     style.backgroundRepeat = "no-repeat";
     style.backgroundSize = "cover";
     style.backgroundPosition = "center";
